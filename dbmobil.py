@@ -18,7 +18,7 @@ sourceAddrLong = hex(response["source_addr_long"])
 if response["id"] == "rx":
 	if response["rf_data"][0:1] == "0":
 		print "Ada Kendaraaan"
-		
+
 noRegistrasi = response["rf_data"][1:11]
 namaPemilik = response["rf_data"][11:31]
 alamat = response["rf_data"][31:81]
@@ -43,8 +43,8 @@ elif WMI == "MHF":
 	merk = "TOYOTA"
 elif WMI == "MKD":
 	merk = "MINERVA"
- 
- VDS = response["rf_data"][88:94]
+
+VDS = response["rf_data"][88:94]
  # tipe =
 if VDS == "1PA002":
 	tipe = "VNL 2013"
@@ -56,7 +56,7 @@ elif VDS =="ZX69G"
 	tipe = "T. FORTUNER 2.7 G AT"
 elif VDS == "JB211":
 	tipe = "HONDA NF 125"
- 
+
 codeYear = response["rf_data"][94:95]
 # tahunPembuatan =
 if codeYear == "4":
@@ -67,7 +67,7 @@ elif codeYear == "B":
 	tahunPembuatan = "2011"
 elif codeYear == "C":
 	tahunPembuatan = "2012"
- 
+
 codeJenis = response["rf_data"][116:117]
 # jenis =
 if codeJenis == "1":
@@ -106,6 +106,7 @@ elif codeBahanBakar == "4":
 	bahanBakar = "PERTALITE"
 elif codeBahanBakar == "5":
 	bahanBakar = "SOLAR"
+
 codeWarnaTNKB = response["rf_data"][120:121]
 # warnaTNKB =
 if codeWarnaTNKB == "1":
