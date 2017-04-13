@@ -52,7 +52,7 @@ elif VDS == "BG41CA":
 	tipe = "SATRIA FU 150"
 elif VDS == "KC3115C":
 	tipe = "MEGA PRO CW"
-elif VDS =="ZX69G"
+elif VDS =="ZX69G":
 	tipe = "T. FORTUNER 2.7 G AT"
 elif VDS == "JB211":
 	tipe = "HONDA NF 125"
